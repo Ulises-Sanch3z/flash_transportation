@@ -25,8 +25,8 @@ JOBS = [
 def hello_jovian():
     return render_template("home.html",
                             jobs = JOBS,
-                            company_name='Jovian')
-@app.route("/api/jobs")
+                            company_name='Los Niños Flash Transportation')
+@app.route("/jobs")
 def list_jobs():
     return jsonify(JOBS)
 if __name__ == "__main__":
