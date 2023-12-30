@@ -7,9 +7,10 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <style>
             #banner {
-                height: 360px;
+                height: 380px;
                 width: 100%;
                 object-fit: cover;
+                margin-bottom: 16px;
             }
         </style>
     </head>
@@ -17,11 +18,19 @@
         {% include 'navbar.html' %}
         <img  class="img-fluid" id="banner" src="/static/3.jpg">
         <div class="container">
-        <h2 class="text-center">About {{company_name}}</h2>
-            <p class="lead">
-                At Los Niños Flash, we understand the importance of your child's safety and your need for convenience. Say goodbye to the stress of rushing to the bus stop and worrying about your child's well-being during their commute. We are here to provide a reliable and personalized transportation solution that brings peace of mind to parents.
-            </p>
-       
+        <h2 
+        class="text-center">About {{company_name}}
+        </h2>
+            <div class="row">
+                    <div class="col-6">
+                <p class="lead">
+                    At Los Niños Flash, we understand the importance of your child's safety and your need for convenience. Say goodbye to the stress of rushing to the bus stop and worrying about your child's well-being during their commute. We are here to provide a reliable and personalized transportation solution that brings peace of mind to parents.
+                </p>
+                    </div>
+                    <div class="col-6">
+                        <img src="/static/driver.jpg" style="height: 320px;border-radius:4px;">
+                    </div>
+            </div>
             <div class="text-center">
             <button class="btn btn-primary btn-lg">Contact Us</button>
             </div>
